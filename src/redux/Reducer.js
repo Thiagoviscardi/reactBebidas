@@ -22,7 +22,7 @@ export const addItem = (item) =>{
     }
 }
 
-export const removeItem = (id) =>{
+export const removeItem = (id) =>{/* Lista.js que ta nos componentes ta chamando esse remover*/
     return{
         type: "REMOVE_ITEM",
         id

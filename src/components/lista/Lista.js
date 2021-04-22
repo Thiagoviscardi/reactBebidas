@@ -4,13 +4,14 @@ import './lista.css'
 import Menu from '../menu/menu'
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem, removeItem } from '../../redux/Reducer'
+
 function Lista() {
 
     const [lista, setLista] = useState([]); //Criando as constantes de estado.
     const listaProdutos = useSelector((state) => state.lista) //vem do redux
     const dispatch = useDispatch();
 
-    useEffect(() => {
+    useEffect(() => { /* primeira funcao a ser chamada é o eseeffect que no caso aqui ta chamando a api*/
         axios.get(' https://api.punkapi.com/v2/beers/')
             .then((res => {
                 setLista(res.data) //lista recebe os dados da api
@@ -20,9 +21,9 @@ function Lista() {
 
     const allItens = Object.assign([], lista, listaProdutos);
 
-    function AdicionaItensRedux() { // acho que tem que fazer algo aqui para adicionar todos os elemetos 
+   /* function AdicionaItensRedux() { // acho que tem que fazer algo aqui para adicionar todos os elemetos 
         dispatch(addItem(lista))
-    }
+    }*/
 
 
     return (

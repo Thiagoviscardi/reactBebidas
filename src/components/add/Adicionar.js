@@ -14,7 +14,7 @@ function Adicionar() {
     }
     function onSubmit(e) {
         e.preventDefault();
-        dispatch(addItem(item))
+        dispatch(addItem(item))/*ta enviando o item la pro reducer*/
         setItem({ name: "", description: "" })
     }
     return (
