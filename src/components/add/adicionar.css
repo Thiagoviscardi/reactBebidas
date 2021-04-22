@@ -1,0 +1,11 @@
+.group-form {
+    width: 50%;
+    margin: 20px auto;
+}
+
+    .group-form button {
+        float: right;
+        border: 0px;
+        width: 18%;
+        height: 33px;
+    }

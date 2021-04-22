@@ -1,12 +1,13 @@
+import React from 'react'
+import Lista from './components/lista/Lista'
+import Menu from './components/menu/menu'
 
-import logo from './logo.svg';
-import './App.css';
-import Home from './componentes/home'
 function App() {
     return (
-        <Home />
+        <>
+            <Menu />
+        </>
     );
 }
 
 export default App;
-

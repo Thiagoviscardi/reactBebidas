@@ -1,0 +1,39 @@
+.page-list-cervejas {
+    display: block;
+    margin: 60px auto;
+}
+
+.card {
+    width: 20rem;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 5px;
+    border: 0px;
+}
+
+    .card img {
+        width: 35px;
+        height: auto;
+        margin: 0 auto;
+        max-height: 80px;
+    }
+
+.remove-item {
+    color: red;
+    border: 0px;
+    background-color: transparent;
+    float: right;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.descCard {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
